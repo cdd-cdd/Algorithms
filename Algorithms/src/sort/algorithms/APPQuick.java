@@ -10,7 +10,7 @@ public class APPQuick {
 		long startTime = System.currentTimeMillis();
 		quickSort.sort();
 		long endTime = System.currentTimeMillis();
-		new APPInsertion().show(array);
+		//new APPInsertion().show(array);
 		System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
 		
 
@@ -25,9 +25,9 @@ public class APPQuick {
 	}
 	
 	static void RandomValue() {
-		array = new int[100000];
+		array = new int[10000000];
 		for(int i = 0; i < array.length; i++) {
-			array[i] = (int) (100000*Math.random());
+			array[i] = (int) (10000000*Math.random());
 		}
 	}
 }

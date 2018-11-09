@@ -1,17 +1,16 @@
 package sort.algorithms;
 
-public class APPShell {
-
+public class APPMerge {
 	static int[] array ;
 
 	public static void main(String[] args) {
 		RandomValue();
-		ShellSort shellSort = new ShellSort(array);
+		MergeSort mergeSort = new MergeSort(array);
 		long startTime = System.currentTimeMillis();
-		shellSort.sort();
+		mergeSort.sort();
 		long endTime = System.currentTimeMillis();
 		//new APPInsertion().show(array);
-		System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
+		System.out.println("MergeSort程序运行时间： "+(endTime-startTime)+"ms");
 		
 
 	}
@@ -30,4 +29,5 @@ public class APPShell {
 			array[i] = (int) (10000000*Math.random());
 		}
 	}
+
 }
